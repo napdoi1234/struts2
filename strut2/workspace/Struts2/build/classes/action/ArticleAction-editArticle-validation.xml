@@ -1,0 +1,59 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="newArticleID">
+		<field-validator type="requiredstring">
+			<message>
+				Article ID is required.
+			</message>
+		</field-validator>
+	</field>
+
+	<field name="newArticleName">
+		<field-validator type="requiredstring">
+			<message>
+				Article name is required.
+			</message>
+		</field-validator>
+	</field>
+	
+	<field name="newCategoryID">
+		<field-validator type="requiredstring">
+			<message>
+				Category ID is required.
+			</message>
+		</field-validator>
+	</field>
+	
+	<field name="newArticleDate">
+		<field-validator type="requiredstring">
+			<message>
+				Date is required.
+			</message>
+		</field-validator>
+	</field>
+	
+	<field name="newArticleContent">
+		<field-validator type="requiredstring">
+			<message>
+				Content is required.
+			</message>
+		</field-validator>
+	</field>
+	
+	<field name="newUserID">
+		<field-validator type="requiredstring">
+			<message>
+				Author ID is required.
+			</message>
+		</field-validator>
+	</field>
+	
+	<field name="newArticleStatus">
+		<field-validator type="requiredstring">
+			<message>
+				Article status is required.
+			</message>
+		</field-validator>
+	</field>
+</validators>

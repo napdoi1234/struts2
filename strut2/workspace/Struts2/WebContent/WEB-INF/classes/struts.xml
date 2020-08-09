@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package extends="struts-default" name="login">
+
+		<action name="user" method="getAllUser"
+			class="action.UserAction">
+
+			<result name="success">/user/listUser.jsp</result>
+
+		</action>
+
+
+		<action name="findUser" method="findUser"
+			class="action.UserAction">
+
+			<result name="findSuccess">/user/edit.jsp</result>
+
+		</action>
+
+
+		<action name="insertu" method="insertUser"
+			class="action.UserAction">
+
+			<result name="insertSuccess" type="redirect">user</result>
+
+			<result name="insertError">/user/insert.jsp</result>
+
+			<result name="input">/user/insert.jsp</result>
+
+		</action>
+
+
+		<action name="updateu" method="editUser"
+			class="action.UserAction">
+
+			<result name="editSuccess" type="redirect">user</result>
+
+			<result name="editError">/user/edit.jsp</result> 
+			<result name="input">/user/edit.jsp</result>
+
+		</action>
+
+
+		<action name="deleteUser" method="deleteUser"
+			class="action.UserAction">
+
+			<result name="deleteSuccess" type="redirect">user</result>
+
+		</action>
+
+	</package>
+	
+	<package extends="struts-default" name="articleS">
+
+		<action name="article" method="getAllArticle"
+			class="action.ArticleAction">
+
+			<result name="success">/article/listArticle.jsp</result>
+
+		</action>
+
+
+		<action name="finda" method="findArticle"
+			class="action.ArticleAction">
+
+			<result name="findSuccess">/article/edit.jsp</result>
+
+		</action>
+
+
+		<action name="inserta" method="insertArticle"
+			class="action.ArticleAction">
+
+			<result name="insertSuccess" type="redirect">article</result>
+
+			<result name="insertError">/article/insert.jsp</result>
+
+			<result name="input">/article/insert.jsp</result>
+
+		</action>
+
+
+		<action name="updatea" method="editArticle"
+			class="action.ArticleAction">
+
+			<result name="editSuccess" type="redirect">article</result>
+
+			<result name="editError">/article/edit.jsp</result> 
+			<result name="input">/article/edit.jsp</result>
+
+		</action>
+
+
+		<action name="deleteArticle" method="deleteArticle"
+			class="action.ArticleAction">
+
+			<result name="deleteSuccess" type="redirect">article</result>
+
+		</action>
+
+	</package>
+
+</struts>

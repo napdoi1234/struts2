@@ -1,0 +1,70 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="user.user_ID">
+		<field-validator type="requiredstring">
+			<message>
+				ID is required.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.full_Name">
+		<field-validator type="requiredstring">
+			<message>
+				Full name is string.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.gender">
+		<field-validator type="requiredstring">
+			<message>
+				Gender is string.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.phone">
+		<field-validator type="int">
+			<param name="min">10000000</param>
+			<param name="max">100000000000</param>
+			<message>
+				Phone is interger between 9 number and 11 number.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.role">
+		<field-validator type="requiredstring">
+			<message>
+				Role is string.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.email">
+		<field-validator type="email">
+			<message>
+				Email is invalid.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.user_Status">
+		<field-validator type="requiredstring">
+			<message>
+				Status is string.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.password">
+		<field-validator type="requiredstring">
+			<message>
+				Password is required.
+			</message>
+		</field-validator>
+	</field>
+	<field name="user.username">
+		<field-validator type="requiredstring">
+			<message>
+				Username is required.
+			</message>
+		</field-validator>
+	</field>
+</validators>

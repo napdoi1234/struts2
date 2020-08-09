@@ -1,0 +1,49 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="article.articleID">
+		<field-validator type="requiredstring">
+			<message>
+				articleID is required.
+			</message>
+		</field-validator>
+	</field>
+	<field name="article.articleName">
+		<field-validator type="requiredstring">
+			<message>
+				articleName is string.
+			</message>
+		</field-validator>
+	</field>
+	<field name="article.articleDate">
+		<field-validator type="regex">
+		<param name="regex"><![CDATA[\d{4}-\d{2}-\d{2}]]></param>
+			<message>
+				articleDate is string.
+			</message>
+		</field-validator>
+	</field>
+	
+	<field name="article.articleContent">
+		<field-validator type="requiredstring">
+			<message>
+				articleContent is string.
+			</message>
+		</field-validator>
+	</field>
+	<field name="article.userID">
+		<field-validator type="email">
+			<message>
+				userID is invalid.
+			</message>
+		</field-validator>
+	</field>
+	<field name="article.articleStatus">
+		<field-validator type="requiredstring">
+			<message>
+				articleStatus is string.
+			</message>
+		</field-validator>
+	</field>
+</validators>
